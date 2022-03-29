@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Each Block</title>
+        <link rel="stylesheet" href="eachblock.css" />
+
+        <script
+            defer
+            src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"
+        ></script>
+        <script id="eachHelper" type="text/x-handlebars-template">
+            {{#each newArray}}
+                <div class='block'>{{this}}</div>
+            {{/each}}
+        </script>
+        <script defer src="eachblock.js"></script>
+    </head>
+
+    <body>
+        <h1>Each Block[s]</h1>
+        <div id="display"></div>
+    </body>
+</html>

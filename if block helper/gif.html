@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>GIF!</title>
+        <link rel="stylesheet" href="gif.css" />
+
+        <script
+            defer
+            src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"
+        ></script>
+        <!-- to check for a specific object property before inserting a value, use the {{if}} helper block -->
+        <script id="ifHelper" type="text/x-handlebars-template">
+            {{#if opinion}}
+                <p>"The correct way to say 'GIF' is GIF!"</p>
+            {{else}}
+                <p>"There's no right way to say GIF!</p>
+            {{/if}}
+        </script>
+        <script defer src="gif.js"></script>
+    </head>
+    <body>
+        <div class="bg">
+            <img
+                class="bg-convo"
+                src="https://content.codecademy.com/courses/learn-handlebars/handlebars%20if.svg"
+                alt=""
+            />
+        </div>
+        <div id="debate"></div>
+    </body>
+</html>
